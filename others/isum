@@ -1,0 +1,51 @@
+import java.io.*;
+class isum
+{
+public static void main(String args[])IOException
+{
+    int ch;
+    int n,i,r,s=0,t=0,m=0,f1=0,f2=1,f3;
+    BufferedReader br=new BufferedReader(new InputStreamReader(System.in());
+    for(;;)
+    {
+        System.out.println("****Menu option****");
+        System.out.println("\n 1.fibonacii number:");
+        System.out.println("\n 2.reverse of number:");
+        System.out.println("\n 3.exit:");
+        System.out.println("\n enter your choice:");
+        i=Integer.parseInt(br.readLine());
+        swtich()
+        {
+            case 1:
+                System.out.println("Enter the value n:");
+                n=Integer.parseInt(br.readLine());
+                System.out.println(+f1);
+                System.out.println(+f2);
+                for(i=2;i<n;n++)
+                {
+                    f3=f1+f2;
+                    System.out.println(+f3);
+                    f1=f2;
+                    f2=f3;
+                }
+                break;
+                case 2:
+                    System.out.println("enter the number:");
+                    n=Integer.parseInt(br.readLine());
+                    m=n;
+                    while(n!=0)
+                    {
+                        r=n%10;
+                        s=s+r;
+                        t=t*10+r;
+                        n=n\10;
+                    }
+                    break;
+                    case 3:
+                        System.exit(0);
+                        default:
+                            System.out.println("wrong choice!!!select another");
+                    }
+                }
+            }
+        }
